@@ -48,7 +48,7 @@
   },
   "homepage": "https://github.com/ecojs/plugin-elixr#readme",
   "description": "A plugin for Eco.js for ElixrMods",
-  "peerDependencies": {
-    "eco.js": ">=1.5.0"
+  "dependencies": {
+    "eco.js": "^1.6.1"
   }
 }
