@@ -1,5 +1,5 @@
 {
-  "name": "@ecojs/plugin-elixr",
+  "name": "@eco.js/plugin-elixr",
   "version": "0.0.1",
   "type": "module",
   "main": "./lib/index.mjs",
