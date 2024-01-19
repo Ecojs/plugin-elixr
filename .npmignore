@@ -1,0 +1,14 @@
+docs/
+src/
+.github/
+.eslintignore
+.eslintrc
+tsconfig.json
+.gitattributes
+.gitignore
+.npmignore
+test/
+vitest.config.ts
+.env
+tsup.config.ts
+.prettierrc
