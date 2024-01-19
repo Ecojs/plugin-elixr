@@ -1,0 +1,54 @@
+{
+  "name": "@ecojs/plugin-elixr",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./lib/index.mjs",
+  "module": "./lib/index.mjs",
+  "types": "./types/index.d.ts",
+  "access": "public",
+  "scripts": {
+    "build": "tsc",
+    "lint": "npx eslint ./src/ --fix && prettier ./src --write",
+    "document": "npx typedoc ./src/index.mts --includeVersion",
+    "test": "vitest"
+  },
+  "keywords": [
+    "RCON",
+    "ECO",
+    "API"
+  ],
+  "author": "bombitmanbomb",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.10.5",
+    "@typescript-eslint/eslint-plugin": "6.18.1",
+    "@typescript-eslint/parser": "6.18.0",
+    "dotenv": "16.3.1",
+    "eslint": "8.56.0",
+    "prettier": "3.2.2",
+    "ts-node": "10.9.2",
+    "tsup": "8.0.1",
+    "typedoc": "0.25.7",
+    "typedoc-material-theme": "1.0.2",
+    "typescript": "5.3.3",
+    "vitest": "1.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecojs/plugin-elixr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ecojs/plugin-elixr/issues"
+  },
+  "homepage": "https://github.com/ecojs/plugin-elixr#readme",
+  "description": "A plugin for Eco.js for ElixrMods",
+  "peerDependencies": {
+    "eco.js": ">=1.5.0"
+  }
+}
