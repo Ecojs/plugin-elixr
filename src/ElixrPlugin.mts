@@ -2,7 +2,7 @@ import { Plugins } from 'eco.js';
 
 export class ElixrPlugin extends Plugins.BasePlugin {
   Name = 'ElixrPlugin';
-  public async getRecipies() {
+  public async getRecipes() {
     return this.http.GET<Map<string, EMRecipe>, Omit<EMRecipe, 'Name'>[]>(
       '/elixr-mods/framework/api/v1/get-recipes',
       (_, dataRaw) => {
