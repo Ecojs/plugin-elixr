@@ -6,7 +6,7 @@ A simple plugin which maps the ElixrFramework endpoints
 
 ```ts
 import { ECO } from 'eco.js';
-import { ElixrPlugin } from '@ecojs/plugin-elixr';
+import { ElixrPlugin } from '@eco.js/plugin-elixr';
 
 // See Eco.js library for Eco configuration
 const server = new ECO()
