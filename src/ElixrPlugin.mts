@@ -1,4 +1,5 @@
 import { Plugins } from 'eco.js';
+import { CommandGroupsController } from './CommandGroupsController.mjs';
 
 export class ElixrPlugin extends Plugins.BasePlugin {
   Name = 'ElixrPlugin';
@@ -10,7 +11,7 @@ export class ElixrPlugin extends Plugins.BasePlugin {
           Object.keys(dataRaw).map((itemName) => {
             return [
               itemName,
-              { Name: itemName, ...Reflect.get(dataRaw, itemName) },
+              { Name: itemName, ...Reflect.get(dataRaw, itemName) } as EMRecipe,
             ];
           }),
         );
@@ -20,4 +21,7 @@ export class ElixrPlugin extends Plugins.BasePlugin {
   public async apiCheck() {
     return this.http.GET<string, string>('/elixr-mods/framework/api/v1');
   }
+  public CommandGroups: CommandGroupsController = new CommandGroupsController(
+    this.client,
+  );
 }
